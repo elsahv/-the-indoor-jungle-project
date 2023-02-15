@@ -130,7 +130,7 @@ const post = ({ title, publishedDate, image, body }) => {
       >
         <Wrapper>
           <PostHero>
-            <PostHeroNav>
+            {/* <PostHeroNav>
               <Logo>
                 <Link href="/">The Indoor Jungle Project</Link>
               </Logo>
@@ -138,7 +138,7 @@ const post = ({ title, publishedDate, image, body }) => {
                 <Link href="/#about">about</Link>
                 <Link href="/#contact">contact</Link>
               </LinkItems>
-            </PostHeroNav>
+            </PostHeroNav> */}
             <PostHeroContent>
               <ul>
                 <li>
@@ -169,7 +169,7 @@ const post = ({ title, publishedDate, image, body }) => {
               <PortableText value={body} />
             </PostContainer>
           </PostTextWrapper>
-          <footer>blog footer</footer>
+          {/* <footer>blog footer</footer> */}
         </Wrapper>
       </motion.div>
     </>
