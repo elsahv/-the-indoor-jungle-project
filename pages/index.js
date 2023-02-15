@@ -4,6 +4,8 @@ import Link from "next/link";
 import { urlFor } from "../utils/image";
 import sanityClient from "../utils/client";
 import { motion } from "framer-motion";
+import About from "../components/About";
+import Contact from "../components/Contact";
 import styled from "styled-components";
 
 const BlogPostsGrid = styled.div`
@@ -48,18 +50,23 @@ const Home = ({ posts }) => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5 }}
       >
-        <BlogPostsGrid>
-          {posts &&
-            posts.map((post, index) => (
-              <span key={index}>
-                <Link href={`post/${post.slug.current}`}>
-                  <ImgWrapper>
-                    <img src={urlFor(post.image)} alt="" className="img" />
-                  </ImgWrapper>
-                </Link>
-              </span>
-            ))}
-        </BlogPostsGrid>
+        <section id="latest-posts">
+          <h2>Latest</h2>
+          <BlogPostsGrid>
+            {posts &&
+              posts.map((post, index) => (
+                <span key={index}>
+                  <Link href={`post/${post.slug.current}`}>
+                    <ImgWrapper>
+                      <img src={urlFor(post.image)} alt="" className="img" />
+                    </ImgWrapper>
+                  </Link>
+                </span>
+              ))}
+          </BlogPostsGrid>
+        </section>
+        <About />
+        <Contact />
       </motion.div>
     </>
   );

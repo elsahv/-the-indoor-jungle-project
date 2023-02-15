@@ -6,12 +6,12 @@ const HeaderSection = () => {
     <Header>
       <Content>
         <NavSection>
-          <Link href="/">
+          <Link href="/#latest-posts">
             <Logo>The Indoor Jungle Project</Logo>
           </Link>
-          <Link href="/">Latest</Link>
-          <Link href="/">About</Link>
-          <Link href="/">Contact</Link>
+          <Link href="/#latest-posts">Latest</Link>
+          <Link href="/#about">About</Link>
+          <Link href="/#contact">Contact</Link>
           {/* <SmIcons>sm</SmIcons> */}
         </NavSection>
       </Content>

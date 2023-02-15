@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   justify-content: flex-start;
+  // color: #000;
   // background: green;
 `;
 
@@ -14,36 +15,37 @@ export const Form = styled.form`
   justify-content: center;
   flex-direction: column;
   .input-fields {
-    color: #000;
+    background: #fff;
     border: solid 2px #000;
-
     padding-left: 10px;
     padding-top: 5px;
+    color: #000;
+    // opacity: 0.8;
     font-size: 18px;
     &:hover {
       opacity: 0.7;
       transition: 1s;
+      // background: #0892a5;
     }
   }
   .btn {
-    background: #588157;
+    background: teal;
     color: #fff;
     width: 30%;
     padding: 0px 5px;
     margin-top: 25px;
     border: solid 2px #000;
+    text-shadow: 1px 1px 1px #000;
     font-size: 17px;
     cursor: pointer;
-    text-shadow: 1px 1px 1px gray;
 
     &:hover {
+      // background: #0892a5;
+      color: aquamarine;
       transition: 1s;
-      color: maroon;
-      text-shadow: none;
     }
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 820px) {
       font-size: 15px;
-      width: 40%;
     }
     @media only screen and (max-width: 599px) {
       width: 130px;
@@ -59,17 +61,15 @@ export const ErrorStyles = styled.div`
   color: maroon;
   font-size: 15px;
   text-transform: lowercase;
-  opacity: 0.8;
 `;
 
 export const Input = styled.input`
   height: 50px;
   border-radius: 5px;
   width: 500px;
-  color: #000;
 
-  @media only screen and (max-width: 1024px) {
-    width: 300px;
+  @media only screen and (max-width: 820px) {
+    width: 400px;
   }
   @media only screen and (max-width: 531px) {
     width: 330px;
@@ -94,6 +94,7 @@ export const SuccessMessageStyles = styled.div`
   position: absolute;
   width: 500px;
   height: 470px;
+  // opacity: 0.7;
   @media only screen and (max-width: 1024px) {
     display: flex;
     flex-direction: column;

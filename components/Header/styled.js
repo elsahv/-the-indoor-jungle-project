@@ -18,7 +18,7 @@ export const Header = styled.header`
 `;
 
 export const Content = styled.ul`
-  height: 35vh;
+  height: 25vh;
   // background: green;
   padding-left: 15px;
   cursor: pointer;
