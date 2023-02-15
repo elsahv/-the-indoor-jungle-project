@@ -19,8 +19,9 @@ const BlogPostsGrid = styled.div`
     margin: 0 0 0 30px;
   }
 
-  @media only screen and (max-width: 800px) {
-    margin: 10px;
+  @media only screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+    margin: 5px;
   }
 `;
 
@@ -34,6 +35,13 @@ const ImgWrapper = styled.div`
   &:hover {
     opacity: 0.7;
     transition: 2s;
+  }
+  @media only screen and (max-width: 1024px) {
+    .img {
+      width: 100%;
+      height: 270px;
+      border: 1px solid #333232;
+    }
   }
 `;
 

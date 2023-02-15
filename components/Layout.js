@@ -9,7 +9,7 @@ const Main = styled.main`
   height: 100vh;
   position: absolute;
   right: 0;
-  // background: maroon;
+  background: #fff;
 
   @media only screen and (max-width: 600px) {
     position: relative;

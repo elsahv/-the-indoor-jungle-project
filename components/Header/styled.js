@@ -15,6 +15,11 @@ export const Header = styled.header`
     color: #fff;
     text-decoration: none;
   }
+  @media only screen and (max-width: 600px) {
+    position: relative;
+    top: 0;
+    height: 150px;
+  }
 `;
 
 export const Content = styled.ul`
@@ -22,18 +27,31 @@ export const Content = styled.ul`
   // background: green;
   padding-left: 15px;
   cursor: pointer;
+  @media only screen and (max-width: 1024px) {
+    height: 18vh;
+  }
 `;
 
 export const NavSection = styled.li`
   display: flex;
   flex-direction: column;
   font-size: 22px;
+  @media only screen and (max-width: 600px) {
+    flex-direction: row;
+  }
 `;
 
 export const Logo = styled.h1`
   font-size: 30px;
   width: 80%;
   padding-bottom: 10px;
+  @media only screen and (max-width: 1024px) {
+    width: 60%;
+    font-size: 25px;
+  }
+  @media only screen and (max-width: 834px) {
+    width: 53%;
+  }
 `;
 
 export const SmIcons = styled.div``;

@@ -9,7 +9,9 @@ const HeaderSection = () => {
           <Link href="/#latest-posts">
             <Logo>The Indoor Jungle Project</Logo>
           </Link>
-          <Link href="/#latest-posts">Latest</Link>
+          <Link cpa href="/#latest-posts">
+            Latest
+          </Link>
           <Link href="/#about">About</Link>
           <Link href="/#contact">Contact</Link>
           {/* <SmIcons>sm</SmIcons> */}
