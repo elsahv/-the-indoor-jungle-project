@@ -9,6 +9,9 @@ export const Section = styled.section`
   a {
     color: #000;
   }
+  @media only screen and (max-width: 1024px) {
+    height: 100%;
+  }
   @media only screen and (max-width: 600px) {
     border-top: solid 1px #000;
   }

@@ -9,7 +9,7 @@ import {
 import Image from "next/image";
 import img2 from "../../public/images/jake.jpg";
 
-export default function ThreeColumnSection({ title, contentBody, icon }) {
+export default function About({ title, contentBody, icon }) {
   return (
     <>
       <Section id="about">

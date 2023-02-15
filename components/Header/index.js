@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Content, NavSection, Logo, Header, SmIcons } from "./styled";
+import { Content, NavSection, Logo, Header } from "./styled";
 
 const HeaderSection = () => {
   return (
@@ -14,7 +14,6 @@ const HeaderSection = () => {
           </Link>
           <Link href="/#about">About</Link>
           <Link href="/#contact">Contact</Link>
-          {/* <SmIcons>sm</SmIcons> */}
         </NavSection>
       </Content>
     </Header>

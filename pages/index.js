@@ -10,13 +10,14 @@ import styled from "styled-components";
 
 const BlogPostsGrid = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  margin: 20px 30px 10px 0;
+  grid-template-columns: 1fr;
+  grid-gap: 3em;
+  margin: 20px 150px 10px 0;
   // background: pink;
 
   @media only screen and (max-width: 1024px) {
     margin: 0 0 0 30px;
+    grid-template-columns: 1fr;
   }
 
   @media only screen and (max-width: 600px) {
@@ -29,19 +30,48 @@ const ImgWrapper = styled.div`
   cursor: pointer;
   .img {
     width: 100%;
-    height: 470px;
     border: 1px solid #333232;
+    border-radius: 3px;
   }
-  &:hover {
-    opacity: 0.7;
-    transition: 2s;
-  }
+
   @media only screen and (max-width: 1024px) {
     .img {
-      width: 100%;
-      height: 270px;
-      border: 1px solid #333232;
+      height: 470px;
     }
+
+    @media only screen and (max-width: 531px) {
+      .img {
+        height: 270px;
+      }
+    }
+  }
+`;
+const Content = styled.div`
+  // background: teal;
+  margin: 10px 25px;
+  padding: 20px 10px 10px 10px;
+  text-transform: capitalize;
+  p {
+    padding-left: 5px;
+  }
+  button {
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+  @media only screen and (max-width: 531px) {
+    margin: 5px 10px;
+  }
+`;
+
+const PostTitle = styled.h2`
+  font-size: 35px;
+  @media only screen and (max-width: 531px) {
+    font-size: 20px;
   }
 `;
 
@@ -59,16 +89,30 @@ const Home = ({ posts }) => {
         transition={{ delay: 0.3, duration: 0.5 }}
       >
         <section id="latest-posts">
-          <h2>Latest</h2>
           <BlogPostsGrid>
             {posts &&
               posts.map((post, index) => (
                 <span key={index}>
-                  <Link href={`post/${post.slug.current}`}>
-                    <ImgWrapper>
-                      <img src={urlFor(post.image)} alt="" className="img" />
-                    </ImgWrapper>
-                  </Link>
+                  <>
+                    <Content>
+                      <PostTitle>{post.title}</PostTitle>
+                      <p>date</p>
+                    </Content>
+                    <Link href={`post/${post.slug.current}`}>
+                      <ImgWrapper>
+                        <img src={urlFor(post.image)} alt="" className="img" />
+                      </ImgWrapper>
+                    </Link>
+
+                    <Content>
+                      <p>{post.description}</p>
+                      <button>
+                        <Link href={`post/${post.slug.current}`}>
+                          read more
+                        </Link>
+                      </button>
+                    </Content>
+                  </>
                 </span>
               ))}
           </BlogPostsGrid>

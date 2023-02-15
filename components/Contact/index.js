@@ -15,7 +15,6 @@ function FooterSection() {
                 iusto unde officia. Explicabo magni fugit voluptatem, provident
                 nostrum facere a consequuntur!
               </p>
-              <p>Blog cta</p>
             </div>
           </Content>
 

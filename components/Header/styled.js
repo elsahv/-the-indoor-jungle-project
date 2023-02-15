@@ -17,8 +17,10 @@ export const Header = styled.header`
   }
   @media only screen and (max-width: 600px) {
     position: relative;
+    display: flex;
+    justify-content: flex-start;
     top: 0;
-    height: 150px;
+    height: 170px;
   }
 `;
 
@@ -27,6 +29,7 @@ export const Content = styled.ul`
   // background: green;
   padding-left: 15px;
   cursor: pointer;
+  width: 100%;
   @media only screen and (max-width: 1024px) {
     height: 18vh;
   }
@@ -37,21 +40,23 @@ export const NavSection = styled.li`
   flex-direction: column;
   font-size: 22px;
   @media only screen and (max-width: 600px) {
-    flex-direction: row;
+    // flex-direction: row;
   }
 `;
 
 export const Logo = styled.h1`
-  font-size: 30px;
+  font-size: 35px;
   width: 80%;
   padding-bottom: 10px;
   @media only screen and (max-width: 1024px) {
     width: 60%;
-    font-size: 25px;
+    font-size: 27px;
   }
   @media only screen and (max-width: 834px) {
     width: 53%;
   }
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    padding: 5px 0px;
+  }
 `;
-
-export const SmIcons = styled.div``;
