@@ -8,9 +8,9 @@ export const Header = styled.header`
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  background: #333232;
+  background: #387d7a;
   color: #fff;
-  text-shadow: 1px 1px 1px #000;
+  // text-shadow: 2px 2px 2px #bc4749;
   a {
     color: #fff;
     text-decoration: none;
@@ -39,6 +39,8 @@ export const NavSection = styled.li`
   display: flex;
   flex-direction: column;
   font-size: 22px;
+  text-shadow: 1px 1px 1px #000;
+
   @media only screen and (max-width: 600px) {
     // flex-direction: row;
   }
@@ -48,6 +50,8 @@ export const Logo = styled.h1`
   font-size: 35px;
   width: 80%;
   padding-bottom: 10px;
+  text-shadow: 1px 1px 1px #000;
+
   @media only screen and (max-width: 1024px) {
     width: 60%;
     font-size: 27px;
