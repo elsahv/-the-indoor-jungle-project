@@ -21,44 +21,12 @@ const Wrapper = styled.div`
 
 const PostHero = styled.div`
   width: 100%;
-  background: #333232;
+  // background: #333232;
   display: flex;
-  border-bottom: solid 1px #000;
+  // border-bottom: solid 1px #000;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
-  }
-`;
-
-const PostHeroNav = styled.div`
-  padding: 25px;
-  background: #333232;
-  border-right: solid 1px #000;
-  border-bottom: solid 1px #000;
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-`;
-
-const Logo = styled.h1`
-  font-size: 30px;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 22px;
-  }
-`;
-
-const LinkItems = styled.div`
-  border-top: solid 1px #000;
-  margin-top: 10px;
-  padding-left: 5px;
-  padding-top: 10px;
-  display: flex;
-  flex-direction: column;
-
-  @media only screen and (max-width: 600px) {
-    border-top: none;
   }
 `;
 
@@ -66,9 +34,9 @@ const PostHeroContent = styled.div`
   display: flex;
   justify-content: flex-start;
   margin-left: 50px;
-  padding: 35px 0 0 55px;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000;
+  // padding: 35px 0 0 55px;
+  color: #000;
+  // text-shadow: 1px 1px 1px #000;
   text-transform: capitalize;
   ul {
     list-style: none;
@@ -83,6 +51,7 @@ const PostHeroContent = styled.div`
 const IconWrapper = styled.div`
   font-size: 25px;
   padding: 15px;
+  margin-top: 70px;
   cursor: pointer;
   @media only screen and (max-width: 600px) {
     padding: 0px;
@@ -105,17 +74,18 @@ const ImgWrapper = styled.div`
   }
 `;
 
-const PostTextWrapper = styled.div`
+const TextWrapper = styled.div`
   opacity: 0.8;
   display: flex;
   justify-content: flex-end;
 `;
 
-const PostContainer = styled.div`
+const TextContainer = styled.div`
   width: 70%;
-  padding: 45px 85px 0 0;
-  @media only screen and (max-width: 600px) {
-    padding: 40px 20px 20px;
+  padding: 15px 135px 0 0;
+  @media only screen and (max-width: 1024px) {
+    // padding: 40px 0px 20px;
+    padding: 10px 30px;
     width: 100%;
   }
 `;
@@ -155,11 +125,11 @@ const post = ({ title, publishedDate, image, body }) => {
               />
             </ImgWrapper>
           </PostHero>
-          <PostTextWrapper>
-            <PostContainer>
+          <TextWrapper>
+            <TextContainer>
               <PortableText value={body} />
-            </PostContainer>
-          </PostTextWrapper>
+            </TextContainer>
+          </TextWrapper>
           {/* <footer>blog footer</footer> */}
         </Wrapper>
       </motion.div>
