@@ -1,17 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import Link from "next/link";
-import { urlFor } from "../utils/image";
 import sanityClient from "../utils/client";
 import { motion } from "framer-motion";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import styled from "styled-components";
+import Card from "../components/Card";
 
 const BlogPostsGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3em;
+  display: flex;
+  flex-direction: column;
   margin: 20px 150px 10px 0;
   // background: pink;
 
@@ -23,55 +21,6 @@ const BlogPostsGrid = styled.div`
   @media only screen and (max-width: 600px) {
     grid-template-columns: 1fr;
     margin: 5px;
-  }
-`;
-
-const ImgWrapper = styled.div`
-  cursor: pointer;
-  .img {
-    width: 100%;
-    border: 1px solid #333232;
-    border-radius: 3px;
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .img {
-      height: 470px;
-    }
-
-    @media only screen and (max-width: 531px) {
-      .img {
-        height: 270px;
-      }
-    }
-  }
-`;
-const Content = styled.div`
-  // background: teal;
-  margin: 10px 25px;
-  padding: 20px 10px 10px 10px;
-  text-transform: capitalize;
-  p {
-    padding-left: 5px;
-  }
-  button {
-    margin-left: 5px;
-    margin-top: 5px;
-    padding: 5px 10px;
-    a {
-      color: #000;
-      text-decoration: none;
-    }
-  }
-  @media only screen and (max-width: 531px) {
-    margin: 5px 10px;
-  }
-`;
-
-const PostTitle = styled.h2`
-  font-size: 35px;
-  @media only screen and (max-width: 531px) {
-    font-size: 20px;
   }
 `;
 
@@ -88,30 +37,15 @@ const Home = ({ posts }) => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5 }}
       >
+        {/* //todo: create card component for each post
+         */}
         <section id="latest-posts">
           <BlogPostsGrid>
             {posts &&
               posts.map((post, index) => (
                 <span key={index}>
                   <>
-                    <Content>
-                      <PostTitle>{post.title}</PostTitle>
-                      <p>date</p>
-                    </Content>
-                    <Link href={`post/${post.slug.current}`}>
-                      <ImgWrapper>
-                        <img src={urlFor(post.image)} alt="" className="img" />
-                      </ImgWrapper>
-                    </Link>
-
-                    <Content>
-                      <p>{post.description}</p>
-                      <button>
-                        <Link href={`post/${post.slug.current}`}>
-                          read more
-                        </Link>
-                      </button>
-                    </Content>
+                    <Card post={post} />
                   </>
                 </span>
               ))}

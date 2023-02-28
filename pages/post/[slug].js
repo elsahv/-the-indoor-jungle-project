@@ -130,15 +130,6 @@ const post = ({ title, publishedDate, image, body }) => {
       >
         <Wrapper>
           <PostHero>
-            {/* <PostHeroNav>
-              <Logo>
-                <Link href="/">The Indoor Jungle Project</Link>
-              </Logo>
-              <LinkItems>
-                <Link href="/#about">about</Link>
-                <Link href="/#contact">contact</Link>
-              </LinkItems>
-            </PostHeroNav> */}
             <PostHeroContent>
               <ul>
                 <li>
