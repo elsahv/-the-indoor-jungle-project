@@ -8,12 +8,17 @@ export const Header = styled.header`
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  background: #387d7a;
-  color: #fff;
-  // text-shadow: 2px 2px 2px #bc4749;
+  // background: #fff;
+  background: teal;
+  border-right: 1px solid #000;
   a {
     color: #fff;
+    text-shadow: 1px 1px 1px #000;
     text-decoration: none;
+  }
+  a:hover {
+    text-shadow: 1px 1px 1px gray;
+    transition: 1s;
   }
   @media only screen and (max-width: 600px) {
     position: relative;
@@ -39,7 +44,7 @@ export const NavSection = styled.li`
   display: flex;
   flex-direction: column;
   font-size: 22px;
-  text-shadow: 1px 1px 1px #000;
+  // text-shadow: 1px 1px 1px #000;
 
   @media only screen and (max-width: 600px) {
     // flex-direction: row;
@@ -50,6 +55,7 @@ export const Logo = styled.h1`
   font-size: 35px;
   width: 80%;
   padding-bottom: 10px;
+  color: #fff;
   text-shadow: 1px 1px 1px #000;
 
   @media only screen and (max-width: 1024px) {
