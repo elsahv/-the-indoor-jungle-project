@@ -12,11 +12,11 @@ const Main = styled.main`
   background: #fff;
 
   @media only screen and (max-width: 600px) {
-    position: relative;
-    bottom: 0;
-    height: 100%;
+    // position: relative;
+    // left: 0;
+    // height: 100%;
     width: 100%;
-    overflow-y: none;
+    // overflow-y: none;
   }
 `;
 

@@ -38,14 +38,12 @@ export const ImgWrapper = styled.div`
   }
 
   @media only screen and (max-width: 1024px) {
-    .img {
-      height: 470px;
-    }
+    margin-right: 25px;
+  }
 
     @media only screen and (max-width: 531px) {
-      .img {
-        height: 270px;
-      }
+      margin: 0;
+     
     }
   }
 `;

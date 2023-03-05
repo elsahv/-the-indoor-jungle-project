@@ -14,16 +14,13 @@ const Wrapper = styled.div`
   height: 100vh;
   position: absolute;
   right: 0;
-  border-left: solid 1px #000;
   z-index: 1200;
-  background: #fff;
+  // background: green;
 `;
 
 const PostHero = styled.div`
   width: 100%;
-  // background: #333232;
   display: flex;
-  // border-bottom: solid 1px #000;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;
@@ -34,9 +31,7 @@ const PostHeroContent = styled.div`
   display: flex;
   justify-content: flex-start;
   margin-left: 50px;
-  // padding: 35px 0 0 55px;
   color: #000;
-  // text-shadow: 1px 1px 1px #000;
   text-transform: capitalize;
   ul {
     list-style: none;
@@ -55,6 +50,7 @@ const IconWrapper = styled.div`
   cursor: pointer;
   @media only screen and (max-width: 600px) {
     padding: 0px;
+    margin-top: 20px;
   }
 `;
 
