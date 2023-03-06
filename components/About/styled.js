@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  height: 100vh;
+  // height: 100vh;
+  background: teal;
   @media only screen and (max-width: 1024px) {
     height: 100%;
   }
@@ -39,6 +40,7 @@ export const LeftSide = styled.div`
 
 export const ImgWrapper = styled.div`
   // background: teal;
+  // border: solid 2px #000;
   width: 500px;
   height: 500px;
 
@@ -51,7 +53,8 @@ export const ImgWrapper = styled.div`
 
 export const RightSide = styled.div`
   grid-area: rightSide;
-  // background: coral;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
   display: flex;
   justify-content: center;
 `;

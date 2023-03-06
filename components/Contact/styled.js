@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
-  height: 100vh;
-  margin-top: 100px;
+  // height: 100vh;
+  margin-top: 250px;
   position: relative;
   bottom: 0;
   width: 100%;
@@ -37,7 +37,7 @@ export const ContactFormWrapper = styled.div`
   align-items: flex-start;
   padding: 100px 0 50px;
   background: lightgray;
-  border-radius: 10px;
+  border-radius: 5px;
 
   @media only screen and (max-width: 1024px) {
     border-top: 1px solid #000;
@@ -51,6 +51,8 @@ export const ContactFormWrapper = styled.div`
   }
 `;
 export const Content = styled.div`
+  // color: teal;
+  // text-shadow: 1px 1px 1px #000;
   grid-area: left;
   padding: 80px 70px 50px;
   display: flex;

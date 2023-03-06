@@ -33,7 +33,7 @@ export const ImgWrapper = styled.div`
   cursor: pointer;
   .img {
     width: 100%;
-    border: 1px solid #333232;
+    border: 2px solid #333232;
     border-radius: 3px;
   }
 

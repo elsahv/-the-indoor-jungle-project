@@ -8,12 +8,13 @@ export const Header = styled.header`
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  // background: #fff;
-  background: teal;
+  background: #fff;
+  // background: lightgray;
   border-right: 1px solid #000;
   a {
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
+    color: #000;
+    // color: #fff;
+    // text-shadow: 1px 1px 1px #000;
     text-decoration: none;
   }
   a:hover {
@@ -55,7 +56,8 @@ export const Logo = styled.h1`
   font-size: 35px;
   width: 80%;
   padding-bottom: 10px;
-  color: #fff;
+  color: teal;
+  // color: #fff;
   text-shadow: 1px 1px 1px #000;
 
   @media only screen and (max-width: 1024px) {

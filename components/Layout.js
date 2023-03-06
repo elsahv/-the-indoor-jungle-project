@@ -4,12 +4,13 @@ import Header from "./Header";
 import styled from "styled-components";
 
 const Main = styled.main`
-  width: 75%;
+  width: 80%;
   overflow-y: scroll;
   height: 100vh;
   position: absolute;
   right: 0;
-  background: #fff;
+  background: orange;
+  border-left: 1px solid #000;
 
   @media only screen and (max-width: 600px) {
     // position: relative;
