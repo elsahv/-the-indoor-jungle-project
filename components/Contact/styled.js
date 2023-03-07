@@ -37,7 +37,7 @@ export const ContactFormWrapper = styled.div`
   justify-content: center;
   align-items: flex-start;
   padding: 100px 0 50px;
-  background: lightgray;
+  background: teal;
   border-radius: 5px;
 
   @media only screen and (max-width: 1024px) {
@@ -53,7 +53,7 @@ export const ContactFormWrapper = styled.div`
 `;
 export const Content = styled.div`
   // color: teal;
-  // text-shadow: 1px 1px 1px #000;
+  // text-shadow: 1px 1px 1px maroon;
   grid-area: left;
   padding: 80px 70px 50px;
   display: flex;

@@ -28,7 +28,7 @@ export const Form = styled.form`
     }
   }
   .btn {
-    background: teal;
+    background: maroon;
     color: #fff;
     width: 30%;
     padding: 0px 5px;
