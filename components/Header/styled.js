@@ -8,7 +8,6 @@ export const Header = styled.header`
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  background: #fff;
   // background: lightgray;
   border-right: 1px solid #000;
   a {

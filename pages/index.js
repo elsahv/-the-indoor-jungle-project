@@ -10,7 +10,7 @@ import Card from "../components/Card";
 const BlogPostsGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
+  grid-gap: 3em;
   margin: 20px 150px 10px 0;
   // background: pink;
 

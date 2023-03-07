@@ -4,7 +4,7 @@ import Header from "./Header";
 import styled from "styled-components";
 
 const Main = styled.main`
-  width: 80%;
+  width: 79%;
   overflow-y: scroll;
   height: 100vh;
   position: absolute;

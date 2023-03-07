@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { urlFor } from "../../utils/image";
-
-import { PostTitle, Content, ImgWrapper } from "./styled";
+import { PostTitle, Content, ImgWrapper, Button } from "./styled";
 
 const Card = ({ post }) => {
   return (
@@ -19,9 +18,9 @@ const Card = ({ post }) => {
 
       <Content>
         <p>{post.description}</p>
-        <button>
+        <Button>
           <Link href={`post/${post.slug.current}`}>read more</Link>
-        </button>
+        </Button>
       </Content>
     </>
   );

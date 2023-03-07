@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Section = styled.section`
+  // background: coral;
   // height: 100vh;
   margin-top: 250px;
   position: relative;
