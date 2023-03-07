@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
-export const Content = styled.div`
+export const Wrapper = styled.div`
   // background: teal;
   padding: 10px;
   text-transform: capitalize;
+  &:hover {
+    transform: rotate(2deg);
+    transition: 1s;
+    // opacity: 0.7;
+  }
   p {
     padding-left: 5px;
   }
@@ -14,11 +19,9 @@ export const Content = styled.div`
 `;
 
 export const PostTitle = styled.h2`
+  padding: 10px;
   font-size: 29px;
-  // color: teal;
-  color: maroon;
-  text-shadow: 1px 1px 1px #000;
-  // text-shadow: 1px 1px 1px maroon;
+  color: #000;
   @media only screen and (max-width: 531px) {
     font-size: 20px;
   }
@@ -26,13 +29,14 @@ export const PostTitle = styled.h2`
 
 export const ImgWrapper = styled.div`
   cursor: pointer;
-   
   .img {
      width: 100%;
   height: 400px;
     border: 1px solid maroon;
     border-radius: 3px;
   }
+   
+
 
   @media only screen and (max-width: 1024px) {
     margin-right: 25px;
