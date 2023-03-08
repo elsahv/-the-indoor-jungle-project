@@ -14,7 +14,7 @@ function Contact() {
             </p>
             <br />
             <p>
-              Simply fill out the contact form, or email me at
+              Simply email me at
               <div style={{ fontWeight: "bold" }}>
                 devdesignsbyelsa@gmail.com
               </div>
