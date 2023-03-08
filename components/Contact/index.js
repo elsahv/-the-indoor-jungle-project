@@ -8,19 +8,25 @@ function FooterSection() {
         <Grid>
           <Content id="sq">
             <div>
-              <h2>Lets gets started...</h2>
+              <h2>What do you think of this site so far?</h2>
+              <p>{"I'd"} love to hear your feedback!</p>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptatem a enim at non, in aut sapiente culpa perferendis
-                iusto unde officia. Explicabo magni fugit voluptatem, provident
-                nostrum facere a consequuntur!
+                If you are hiring any web developers, {"I'd"} really love to
+                hear from ya!
+              </p>
+              <br />
+              <p>
+                Simply fill out the contact form, or email me at
+                <div style={{ fontWeight: "bold" }}>
+                  devdesignsbyelsa@gmail.com
+                </div>
               </p>
             </div>
           </Content>
 
-          <ContactFormWrapper id="sq">
-            <ContactForm />
-          </ContactFormWrapper>
+          {/* <ContactFormWrapper id="sq"> */}
+          {/* <ContactForm /> */}
+          {/* </ContactFormWrapper> */}
         </Grid>
       </Section>
     </>

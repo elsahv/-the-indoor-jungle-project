@@ -62,6 +62,15 @@ export const RightSide = styled.div`
 export const AboutContent = styled.div`
   padding: 100px 50px 0;
   // background-color: orange;
+  a {
+    color: #000;
+    text-shadow: none;
+    padding: 0 5px;
+    &:hover {
+      text-shadow: 1px 1px 1px #000;
+      transition: 1s;
+    }
+  }
   @media only screen and (max-width: 1024px) {
     padding: auto;
   }
