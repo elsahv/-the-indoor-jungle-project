@@ -21,6 +21,8 @@ const Wrapper = styled.div`
 const PostHero = styled.div`
   width: 100%;
   display: flex;
+  background: teal;
+  border-bottom: 1px solid maroon;
 
   @media only screen and (max-width: 600px) {
     flex-direction: column;

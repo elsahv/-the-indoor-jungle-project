@@ -13,12 +13,12 @@ function Contact() {
               from ya!
             </p>
             <br />
-            <p>
+            <div>
               Simply email me at
               <div style={{ fontWeight: "bold" }}>
                 devdesignsbyelsa@gmail.com
               </div>
-            </p>
+            </div>
           </Content>
         </Grid>
       </Section>

@@ -5,14 +5,24 @@ export const Wrapper = styled.div`
   padding: 10px;
   text-transform: capitalize;
   &:hover {
-    transform: rotate(2deg);
     transition: 1s;
-    // opacity: 0.7;
+    opacity: 0.7;
   }
   p {
     padding-left: 5px;
   }
 
+  @media only screen and (max-width: 531px) {
+    margin: 5px 10px;
+  }
+`;
+export const Content = styled.div`
+  // background: teal;
+  padding: 10px;
+  text-transform: capitalize;
+  p {
+    padding-left: 5px;
+  }
   @media only screen and (max-width: 531px) {
     margin: 5px 10px;
   }

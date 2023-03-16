@@ -8,7 +8,7 @@ export const Header = styled.header`
   justify-content: flex-end;
   align-items: flex-end;
   flex-direction: column;
-  background: #fff;
+  background: #483c46;
   border-right: 1px solid #000;
   a {
     color: teal;
@@ -19,6 +19,7 @@ export const Header = styled.header`
   a:hover {
     text-shadow: 1px 1px 1px gray;
     transition: 1s;
+    // color: #fff;
   }
   @media only screen and (max-width: 600px) {
     position: relative;
