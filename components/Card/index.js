@@ -8,7 +8,6 @@ const Card = ({ post }) => {
       <Wrapper>
         <Content>
           <PostTitle>{post.title}</PostTitle>
-          {/* <p>date</p> */}
         </Content>
 
         <Link href={`post/${post.slug.current}`}>

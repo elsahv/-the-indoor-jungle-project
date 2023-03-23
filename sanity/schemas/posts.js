@@ -31,13 +31,9 @@ export default {
       },
     },
     {
-      title: "Published date",
-      name: "publishedDate",
-      type: "date",
-      options: {
-        dateFormat: "MM-DD-YYYY",
-        calendarTodayLabel: "Today",
-      },
+      name: "publishedAt",
+      type: "datetime",
+      title: "Published At",
     },
     {
       name: "categories",

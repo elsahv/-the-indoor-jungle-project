@@ -89,7 +89,7 @@ const TextContainer = styled.div`
   }
 `;
 
-const post = ({ title, publishedDate, image, body }) => {
+const post = ({ title, publishedAt, image, body }) => {
   return (
     <>
       <Head>
@@ -116,7 +116,7 @@ const post = ({ title, publishedDate, image, body }) => {
                 <li>
                   <PostTitle>{title}</PostTitle>
                 </li>
-                <li>{publishedDate}</li>
+                <li> {new Date(publishedAt).toDateString()}</li>
               </ul>
             </PostHeroContent>
             <ImgWrapper>
@@ -146,7 +146,7 @@ export const getServerSideProps = async (pageContext) => {
 
   const query = `*[_type == "posts" && slug.current == $pageSlug][0] {
   title,
-  publishedDate,
+  publishedAt,
   image,
   body,
 }`;
@@ -161,7 +161,7 @@ export const getServerSideProps = async (pageContext) => {
     return {
       props: {
         title: post.title,
-        publishedDate: post.publishedDate,
+        publishedAt: post.publishedAt,
         image: post.image,
         body: post.body,
       },
