@@ -13,11 +13,7 @@ const Main = styled.main`
   border-left: 1px solid #000;
 
   @media only screen and (max-width: 600px) {
-    // position: relative;
-    // left: 0;
-    // height: 100%;
     width: 100%;
-    // overflow-y: none;
   }
 `;
 

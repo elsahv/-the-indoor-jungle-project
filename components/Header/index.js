@@ -7,7 +7,7 @@ const HeaderSection = () => {
       <Content>
         <NavSection>
           <Link href="/#latest-posts">
-            <Logo>The Indoor Jungle Project</Logo>
+            <h1 className="text-red-200">The Indoor Jungle Project</h1>
           </Link>
           <Link cpa href="/#latest-posts">
             Latest
