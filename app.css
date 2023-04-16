@@ -14,15 +14,11 @@
     scroll-behavior: smooth;
   }
 
-  #main-layout {
-    margin-top: 600px;
-    background: red;
-  }
- 
+
   #latest-posts {
     padding: 20px;
-    /* margin: 300px 100px 100px 100px; */
-    background: aquamarine; 
+    margin: 300px 100px 100px 100px;
+    /* background: aquamarine;  */
   }
   p {
     line-height: 1.5;

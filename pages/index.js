@@ -22,7 +22,10 @@ const Home = ({ posts }) => {
       >
         <section id="latest-posts">
           <div className="">
-            <div className="grid grid-cols-2 gap-12">
+            <div className="py-5">
+              <h2 className="text-2xl text-center">Latest Posts</h2>
+            </div>
+            <div className="grid grid-cols-3 gap-12 mx-24">
               {posts &&
                 posts.map((post, index) => (
                   <span key={index}>

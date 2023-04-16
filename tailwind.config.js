@@ -10,8 +10,10 @@ module.exports = {
   ],
   theme: {
     colors: {
+      seagreen: "#4E865F",
+      eggplant: "#483C46",
       teal: "#008080",
-      // munsell: "#0792a5",
+      munsell: "#0792a5",
       parchment: "#f0ead2",
       test: "red",
     },
