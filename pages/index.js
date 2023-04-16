@@ -7,24 +7,6 @@ import Contact from "../components/Contact";
 import styled from "styled-components";
 import Card from "../components/Card";
 
-const BlogPostsGrid = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 3em;
-  margin: 20px 150px 10px 0;
-  // background: pink;
-
-  @media only screen and (max-width: 1024px) {
-    margin: 0 0 0 30px;
-    grid-template-columns: 1fr;
-  }
-
-  @media only screen and (max-width: 600px) {
-    grid-template-columns: 1fr;
-    margin: 5px;
-  }
-`;
-
 const Home = ({ posts }) => {
   return (
     <>
@@ -38,20 +20,20 @@ const Home = ({ posts }) => {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.5 }}
       >
-        {/* //todo: create card component for each post
-         */}
         <section id="latest-posts">
-          <BlogPostsGrid>
-            {posts &&
-              posts.map((post, index) => (
-                <span key={index}>
-                  <Card post={post} />
-                </span>
-              ))}
-          </BlogPostsGrid>
+          <div className="">
+            <div className="grid grid-cols-2 gap-12">
+              {posts &&
+                posts.map((post, index) => (
+                  <span key={index}>
+                    <Card post={post} />
+                  </span>
+                ))}
+            </div>
+          </div>
         </section>
-        <About />
-        <Contact />
+        {/* <About />
+        <Contact /> */}
       </motion.div>
     </>
   );
